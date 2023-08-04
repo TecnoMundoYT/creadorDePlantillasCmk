@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creador de plantillas</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/lux/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/javascript.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <span class="navbar-brand" href="#">
+            <img
+              src="https://imgext.cmnetworkusercontent.com/?url=cmkautos.com/wp-content/uploads/2022/10/cmk-autos-logo-768x130.png"
+              alt="Logo"
+              width="150"
+              height="auto"
+              class="d-inline-block align-text-top"
+            /><br>
+            Creador de plantillas</span
+          >
+        </div>
+      </nav>
+      <div class="card mt-5">
+        <h5 class="card-header">Ingresa los datos del vehiculo</h5>
+        <div class="card-body">
+          <form action="">
+            <div class="buscador">
+              <span>Marca</span>
+              <select
+                data-live-search="true"
+                class="form-select selectpicker"
+                name=""
+                id="marca"
+                oninput="updateTextarea()"
+              >
+                <option value="Bera">Bera</option>
+                <option selected value="">Seleccionar</option>
+                <option value="Benelli">Benelli</option>
+                <option value="Yamaha">Yamaha</option>
+                <option value="Haojue">Haojue</option>
+                <option value="Harley davidson">Harley davidson</option>
+                <option value="Piaggio">Piaggio</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="Kawasaki">Kawasaki</option>
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Chery">Chery</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Chrysler">Chrysler</option>
+                <option value="Daihatsu">Daihatsu</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Dong Feng">Dong Feng</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Ford">Ford</option>
+                <option value="Honda">Honda</option>
+                <option value="Hummer">Hummer</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Iveco">Iveco</option>
+                <option value="Jac">Jac</option>
+                <option value="Jeep">Jeep</option>
+                <option value="Kia">Kia</option>
+                <option value="Land Rover">Land Rover</option>
+                <option value="Lincoln">Lincoln</option>
+                <option value="Mazda">Mazda</option>
+                <option value="Mercedes Benz">Mercedes Benz</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Peugeot">Peugeot</option>
+                <option value="Renault">Renault</option>
+                <option value="Seta">Seta</option>
+                <option value="Subaru">Subaru</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="Tiuna">Tiuna</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Venirauto">Venirauto</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Zotye">Zotye</option>
+              </select>
+            </div>
+            <span>Modelo</span>
+            <select
+              data-live-search="true"
+              class="form-select selectpicker"
+              name=""
+              id="modelo"
+            >
+              <option value="" selected>Seleccionar</option>
+              <option value="BR2000W">BR2000W</option>
+              <option value="BR200-2">BR200-2</option>
+              <option value="Trek 1130">Trek 1130</option>
+              <option value="YBR-125">YBR-125</option>
+              <option value="YB125ZR">YB125ZR</option>
+              <option value="HJ150S">HJ150S</option>
+              <option value="Forty Eight">Forty Eight</option>
+              <option value="Beverly 350cc">Beverly 350cc</option>
+              <option value="V-Strom">V-Strom</option>
+              <option value="KLR">KLR</option>
+              <option value="Q7">Q7</option>
+              <option value="320I Limousine">320I Limousine</option>
+              <option value="320I">320I</option>
+              <option value="Arauca">Arauca</option>
+              <option value="Orinoco">Orinoco</option>
+              <option value="Tiggo">Tiggo</option>
+              <option value="Grand Tiger">Grand Tiger</option>
+              <option value="Grand Tiggo">Grand Tiggo</option>
+              <option value="X1">X1</option>
+              <option value="Panel H5">Panel H5</option>
+              <option value="Aveo">Aveo</option>
+              <option value="Aveo LT">Aveo LT</option>
+              <option value="C3500">C3500</option>
+              <option value="Camaro">Camaro</option>
+              <option value="Captiva">Captiva</option>
+              <option value="Corvette">Corvette</option>
+              <option value="Cheyenne">Cheyenne</option>
+              <option value="Cruze">Cruze</option>
+              <option value="Spark">Spark</option>
+              <option value="Meriva">Meriva</option>
+              <option value="Grand Vitara">Grand Vitara</option>
+              <option value="Impala">Impala</option>
+              <option value="Luv D’Max">Luv D’Max</option>
+              <option value="Land Cruiser TE">Land Cruiser TE</option>
+              <option value="NPR">NPR</option>
+              <option value="Silverado">Silverado</option>
+              <option value="Silverado XLI">Silverado XLI</option>
+              <option value="Silverado LS">Silverado LS</option>
+              <option value="Silverado LT">Silverado LT</option>
+              <option value="Optra Advance">Optra Advance</option>
+              <option value="Optra Desing">Optra Desing</option>
+              <option value="Optra Limited">Optra Limited</option>
+              <option value="Optra LT">Optra LT</option>
+              <option value="Orlando">Orlando</option>
+              <option value="Tahoe">Tahoe</option>
+              <option value="Grand Blazer">Grand Blazer</option>
+              <option value="Trailblazer">Trailblazer</option>
+              <option value="Express Van">Express Van</option>
+              <option value="Panel Van">Panel Van</option>
+              <option value="Stratus">Stratus</option>
+              <option value="Terios Cool">Terios Cool</option>
+              <option value="Terios Bego">Terios Bego</option>
+              <option value="Caliber">Caliber</option>
+              <option value="Dakota">Dakota</option>
+              <option value="Forza">Forza</option>
+              <option value="Ram">Ram</option>
+              <option value="ZNA">ZNA</option>
+              <option value="500E">500E</option>
+              <option value="Cargo 815">Cargo 815</option>
+              <option value="Escape">Escape</option>
+              <option value="Ecosport">Ecosport</option>
+              <option value="Ecosport Titanium">Ecosport Titanium</option>
+              <option value="Expedition">Expedition</option>
+              <option value="Explorer Sport">Explorer Sport</option>
+              <option value="Explorer Eddie Bauer">Explorer Eddie Bauer</option>
+              <option value="Explorer Limited">Explorer Limited</option>
+              <option value="Explorer XLT">Explorer XLT</option>
+              <option value="F-150">F-150</option>
+              <option value="F-250">F-250</option>
+              <option value="F-350">F-350</option>
+              <option value="Fiesta Max">Fiesta Max</option>
+              <option value="Fiesta Move">Fiesta Move</option>
+              <option value="Focus">Focus</option>
+              <option value="Fusion">Fusion</option>
+              <option value="Ka">Ka</option>
+              <option value="Laser">Laser</option>
+              <option value="Mustang">Mustang</option>
+              <option value="Ranger">Ranger</option>
+              <option value="Civic">Civic</option>
+              <option value="CRV">CRV</option>
+              <option value="Civic Vtec">Civic Vtec</option>
+              <option value="Civic LXS">Civic LXS</option>
+              <option value="H2">H2</option>
+              <option value="H3">H3</option>
+              <option value="Elantra">Elantra</option>
+              <option value="Getz">Getz</option>
+              <option value="Galloper">Galloper</option>
+              <option value="Tucson">Tucson</option>
+              <option value="Santa Fe">Santa Fe</option>
+              <option value="Plat-Baranda">Plat-Baranda</option>
+              <option value="Daily">Daily</option>
+              <option value="HFC">HFC</option>
+              <option value="Cherokee Classic">Cherokee Classic</option>
+              <option value="Cherokee Liberty Limited">
+                Cherokee Liberty Limited
+              </option>
+              <option value="Cherokee Liberty Sport">
+                Cherokee Liberty Sport
+              </option>
+              <option value="Cherokee Limited">Cherokee Limited</option>
+              <option value="Cherokee Limited KK">Cherokee Limited KK</option>
+              <option value="Cherokee Sport KK">Cherokee Sport KK</option>
+              <option value="Grand Cherokee">Grand Cherokee</option>
+              <option value="Grand Cherokee 4 Plus">
+                Grand Cherokee 4 Plus
+              </option>
+              <option value="Grand Cherokee Laredo">
+                Grand Cherokee Laredo
+              </option>
+              <option value="Grand Cherokee Limited">
+                Grand Cherokee Limited
+              </option>
+              <option value="Grand Cherokee overland">
+                Grand Cherokee overland
+              </option>
+              <option value="Gladiator">Gladiator</option>
+              <option value="Cherokee Renegade">Cherokee Renegade</option>
+              <option value="Grand Cherokee WK SRT">
+                Grand Cherokee WK SRT
+              </option>
+              <option value="Rubicon">Rubicon</option>
+              <option value="Wrangler S">Wrangler S</option>
+              <option value="Wrangler">Wrangler</option>
+              <option value="Sportage">Sportage</option>
+              <option value="Sorento">Sorento</option>
+              <option value="Rio Stylus">Rio Stylus</option>
+              <option value="Discovery II">Discovery II</option>
+              <option value="Defender">Defender</option>
+              <option value="Twon Car">Twon Car</option>
+              <option value="B26">B26</option>
+              <option value="BT50">BT50</option>
+              <option value="Mazda 3">Mazda 3</option>
+              <option value="Mazda 6">Mazda 6</option>
+              <option value="C200 Kompressor">C200 Kompressor</option>
+              <option value="ML-320">ML-320</option>
+              <option value="C-200K">C-200K</option>
+              <option value="C280 Elegance">C280 Elegance</option>
+              <option value="C230 Compres">C230 Compres</option>
+              <option value="Galant">Galant</option>
+              <option value="Lancer GLX">Lancer GLX</option>
+              <option value="Montero Dakar">Montero Dakar</option>
+              <option value="Montero Limited">Montero Limited</option>
+              <option value="Montero Sport">Montero Sport</option>
+              <option value="Outlander">Outlander</option>
+              <option value="Panel L200">Panel L200</option>
+              <option value="Panel L300">Panel L300</option>
+              <option value="Signo">Signo</option>
+              <option value="Touring">Touring</option>
+              <option value="240XES">240XES</option>
+              <option value="Patrol">Patrol</option>
+              <option value="Tiida">Tiida</option>
+              <option value="Almera">Almera</option>
+              <option value="207">207</option>
+              <option value="206">206</option>
+              <option value="Partner">Partner</option>
+              <option value="Clio">Clio</option>
+              <option value="Megane II">Megane II</option>
+              <option value="Megane">Megane</option>
+              <option value="Symbol">Symbol</option>
+              <option value="Twingo">Twingo</option>
+              <option value="Toledo FSI">Toledo FSI</option>
+              <option value="Impreza">Impreza</option>
+              <option value="Grand Vitara">Grand Vitara</option>
+              <option value="X5 Luxury">X5 Luxury</option>
+              <option value="Autana">Autana</option>
+              <option value="Burbuja">Burbuja</option>
+              <option value="4Runner">4Runner</option>
+              <option value="4Runner SR5">4Runner SR5</option>
+              <option value="C-HR">C-HR</option>
+              <option value="Camry">Camry</option>
+              <option value="Corolla">Corolla</option>
+              <option value="Corolla XLI">Corolla XLI</option>
+              <option value="Corolla GLI">Corolla GLI</option>
+              <option value="Corolla LE">Corolla LE</option>
+              <option value="Corolla S">Corolla S</option>
+              <option value="Corolla SE">Corolla SE</option>
+              <option value="Corolla SEG">Corolla SEG</option>
+              <option value="Dyna Turbo 343">Dyna Turbo 343</option>
+              <option value="FJ">FJ</option>
+              <option value="Fortuner">Fortuner</option>
+              <option value="Fortuner SRX">Fortuner SRX</option>
+              <option value="Hembrita">Hembrita</option>
+              <option value="Hilux">Hilux</option>
+              <option value="Hilux Kavak">Hilux Kavak</option>
+              <option value="Hilux DLX (DUBAI)">Hilux DLX (DUBAI)</option>
+              <option value="Hilux SRX">Hilux SRX</option>
+              <option value="Machito">Machito</option>
+              <option value="Meru">Meru</option>
+              <option value="Prado">Prado</option>
+              <option value="Previa">Previa</option>
+              <option value="Samurai">Samurai</option>
+              <option value="Starlet">Starlet</option>
+              <option value="Sienna XLT">Sienna XLT</option>
+              <option value="Tacoma">Tacoma</option>
+              <option value="Tundra">Tundra</option>
+              <option value="Yaris del Sol">Yaris del Sol</option>
+              <option value="Yaris Sport">Yaris Sport</option>
+              <option value="Yaris Belta">Yaris Belta</option>
+              <option value="Centauro">Centauro</option>
+              <option value="Bora">Bora</option>
+              <option value="Jetta">Jetta</option>
+              <option value="Polo">Polo</option>
+              <option value="Spacefox">Spacefox</option>
+              <option value="Fox">Fox</option>
+              <option value="Kombi">Kombi</option>
+              <option value="Gol">Gol</option>
+              <option value="Touareg">Touareg</option>
+              <option value="Nomada">Nomada</option>
+              <option value="Wagon R">Wagon R</option>
+            </select>
+            <br />
+            <span>Año</span> <br />
+            <input
+              type="number"
+              class="form-control"
+              id="año"
+              placeholder="ejemplo: 2010"
+              oninput="limitarInput(this, 4)"
+            />
+
+            <span>Kilometraje</span> <br />
+            <input id="recorrido" type="number" style="width: 40% !important; display: inline;" oninput="agregarPunto(this)" class="form-control" aria-label="Text input with dropdown button">
+              <select class="form-select" style="width: auto !important; display: inline;" name="tipodm" id="tipodm">
+                <option selected value="Km">Km</option>
+                <option value="Millas">Millas</option>
+              </select><br>
+
+            <span>Combustible</span>
+            <select class="form-select" name="" id="combustible">
+              <option selected value="">Gasolina</option>
+              <option value="Gasoil">Gasoil</option>
+              <option value="Electrico">Electrico</option>
+              <option value="Gasolina (Cuenta con sistema de gas)">
+                Hibrido (Gasolina y Gas)
+              </option>
+            </select>
+            <span>Color</span> <br />
+            <input
+              type="text"
+              class="form-control"
+              id="color"
+              placeholder="ejemplo: Azul"
+            />
+            <span>Transmision</span>
+            <select class="form-select" name="" id="transmision">
+              <option selected value="">Seleccionar</option>
+              <option value="Automatico">Automatico</option>
+              <option value="Automatico 4x2">Automatico 4x2</option>
+              <option value="Automatico 4x4">Automatico 4x4</option>
+              <option value="Sincronico">Sincronico</option>
+              <option value="Sincronico 4x2">Sincronico 4x2</option>
+              <option value="Sincronico 4x4">Sincronico 4x4</option>
+              <option value="Secuencial">Secuencial</option>
+            </select>
+            <span>tapiceria</span> <br />
+            <select class="form-select" name="" id="tapiceria">
+              <option selected value="">Seleccionar</option>
+              <option value="Tela">Tela</option>
+              <option value="Cuero">Cuero</option>
+            </select>
+            <span>Aire</span>
+            <select class="form-select" name="" id="aire">
+              <option selected value="">Seleccionar</option>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
+            </select>
+            <span>Dueños</span> <br />
+            <select data-live-search="true"
+            class="form-select selectpicker" class="form-select" name="" id="dueños">
+              <option selected value="">Selecionar</option>
+              <option value="Unico Dueño">1</option>
+              <option value="2do Dueño">2</option>
+              <option value="3er Dueño">3</option>
+              <option value="4to Dueño">4</option>
+              <option value="5to Dueño">5</option>
+              <option value="6to Dueño">6</option>
+              <option value="7mo Dueño">7</option>
+              <option value="8vo Dueño">8</option>
+              <option value="9no Dueño">9</option>
+              <option value="10vo Dueño">10</option>
+              <option value="11vo Dueño">11</option>
+              <option value="12vo Dueño">12</option>
+              <option value="13vo Dueño">13</option>
+            </select>
+            <span>Detalles</span> <br />
+            <textarea
+              id="detalles"
+              class="form-control"
+              placeholder="Ejemplo: Cauchos nuevos, 2 juegos de llaves, etc"
+              aria-label="With textarea"
+            ></textarea>
+            <span>% Porcentaje de vida de los cauchos</span> <br />
+            <div class="input-group">
+              <input
+                oninput="limitarInput(this, 2)"
+                id="cauchos"
+                placeholder="ejemplo: 75"
+                type="number"
+                class="form-control"
+                aria-label="Dollar amount (with dot and two decimal places)"
+              />
+              <span class="input-group-text">%</span>
+            </div>
+            <span>Precio CMKAUTOS</span>
+            <input  id="preciocmk" oninput="agregarPunto(this)" class="form-select" type="number">
+            <span>Precio Cliente</span>
+            <input  id="preciocliente" oninput="agregarPunto(this)" class="form-select" type="number">
+            <span>Sede</span>
+            <select class="form-select" name="" id="ubicacion">
+              <option selected value="">Seleccionar</option>
+              <option
+                value="Distribuidor de la Rosaleda, al lado del Centro Comercial Coliseo, San Antonio de los Altos, Edo.Miranda."
+              >
+                San Antonio
+              </option>
+              <option
+                value="Centro comercial Los Chaguaramos nivel E4 del estacionamiento, Caracas"
+              >
+                Los Chaguaramos
+              </option>
+              <option
+                value="Av. El Bosque, Urb. La Florida, detrás de la Iglesia La Chiquinquirá, Caracas"
+              >
+                La Florida
+              </option>
+            </select>
+            <span>Tipo de consignacion</span>
+            <select class="form-select" name="" id="tipo">
+              <option selected value="">Seleccionar</option>
+              <option value="Consignado">Fisica</option>
+              <option value="Previa Cita">Virtual</option>
+            </select>
+            <span>Asesor</span>
+            <input
+              type="text"
+              class="form-control"
+              id="asesor"
+              placeholder="ejemplo: Victor Albornoz"
+            />
+            <span>Instagram</span>
+            <input
+              type="text"
+              class="form-control"
+              id="instagram"
+              placeholder="ejemplo: @victorcars"
+            />
+            <span>Números de teléfono</span> <br />
+            <input
+              type="text"
+              class="form-control"
+              id="numero"
+              placeholder="+584126368619,+584126368619"
+            />
+          </form>
+          <br />
+          <button class="btn btn-primary" onclick="copyToClipboard()">
+            Crear plantilla
+          </button>
+          <br />
+          <br />
+          <span>previsualización</span>
+          <textarea
+            class="form-control"
+            id="plantilla"
+            rows="5"
+            cols="5"
+          ></textarea>
+        </div>
+      </div>
+
+      <!DOCTYPE html>
+    </div>
+  </body>
+</html>
